@@ -1,10 +1,3 @@
-fabiopolli: @workspace Monta um README do código, por favor. Irei subir esse código no github e preciso que ele esteja bem documentado.
-
-Workspace: Coletando informações do workspace
-
-Claro! Aqui está um exemplo de README para o seu projeto:
-
-```md
 # Dating AI
 
 Dating AI é uma aplicação web de encontros que permite aos usuários visualizar perfis e conversar com outros usuários em tempo real.
@@ -13,45 +6,17 @@ Dating AI é uma aplicação web de encontros que permite aos usuários visualiz
 
 ```
 __pycache__/
-
-
 app.py
-
-
-
-
 chat.html
-
-
 instance/
 static/
     images/
-    
-
 style.css
-
-
 templates/
-    
-
-home.html
-
-
-    
-
-login.html
-
-
-    
-
-profile.html
-
-
-    
-
-register.html
-
-
+    home.html
+    login.html
+    profile.html
+    register.html
 ```
 
 ## Funcionalidades
@@ -95,54 +60,18 @@ register.html
 
 ## Estrutura de Arquivos
 
-- 
-
-app.py
-
-: Arquivo principal da aplicação Flask, contendo as rotas e a configuração do banco de dados.
-- 
-
-chat.html
-
-: Template HTML para a página de chat.
-- 
-
-style.css
-
-: Arquivo CSS para estilização das páginas.
-- 
-
-home.html
-
-: Template HTML para a página inicial.
-- 
-
-login.html
-
-: Template HTML para a página de login.
-- 
-
-profile.html
-
-: Template HTML para a página de perfil.
-- 
-
-register.html
-
-: Template HTML para a página de registro.
+- `app.py`: Arquivo principal da aplicação Flask, contendo as rotas e a configuração do banco de dados.
+- `chat.html`: Template HTML para a página de chat.
+- `style.css`: Arquivo CSS para estilização das páginas.
+- `home.html`: Template HTML para a página inicial.
+- `login.html`: Template HTML para a página de login.
+- `profile.html`: Template HTML para a página de perfil.
+- `register.html`: Template HTML para a página de registro.
 
 ## Modelos
 
-- 
-
-User
-
-: Modelo para armazenar informações dos usuários (username, password, age, gender, preferences).
-- 
-
-Profile
-
-: Modelo para armazenar informações dos perfis (name, age, gender, bio, image_url).
+- `User`: Modelo para armazenar informações dos usuários (username, password, age, gender, preferences).
+- `Profile`: Modelo para armazenar informações dos perfis (name, age, gender, bio, image_url).
 
 ## Rotas
 
@@ -164,7 +93,5 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 ## Licença
 
 Este projeto está licenciado sob a MIT License.
-```
 
-Certifique-se de ajustar o link do repositório no comando `git clone` e adicionar um arquivo `requirements.txt` com as dependências do projeto.
 Certifique-se de ajustar o link do repositório no comando `git clone` e adicionar um arquivo `requirements.txt` com as dependências do projeto.
