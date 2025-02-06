@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <img src="{{ url_for('static', filename=profile.image_url) }}" alt="{{ profile.name }}" class="profile-image">
+            <h1>{{ profile.name }}</h1>
+        </div>
+        <div class="profile-details">
+            <p><strong>Age:</strong> {{ profile.age }}</p>
+            <p><strong>Gender:</strong> {{ profile.gender }}</p>
+            <p><strong>Bio:</strong> {{ profile.bio }}</p>
+        </div>
+        <div class="profile-actions">
+            <a href="/" class="button">Back</a>
+            <a href="/chat/{{ profile.id }}" class="button">Chat with {{ profile.name }}</a>
+        </div>
+    </div>
+</body>
+</html>

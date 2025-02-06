@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Dating AI</h1>
+            <a href="/logout" class="button">Logout</a>
+        </header>
+        <section>
+            <h2>Profiles</h2>
+            <div class="profiles">
+                {% for profile in profiles %}
+                <div class="profile-card">
+                    <img src="{{ url_for('static', filename=profile.image_url) }}" alt="{{ profile.name }}" class="profile-image">
+                    <h3>{{ profile.name }}</h3>
+                    <p>Age: {{ profile.age }}</p>
+                    <p>Bio: {{ profile.bio }}</p>
+                    <a href="/profile/{{ profile.id }}" class="button">View Profile</a>
+                    <a href="/chat/{{ profile.id }}" class="button">Chat</a>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</body>
+</html>
